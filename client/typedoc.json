@@ -1,0 +1,8 @@
+{
+  "entryPoints": ["./src/util/*.ts"],
+  "name": "SQL Editor",
+  "entryPointStrategy": "expand",
+  "includeVersion": false,
+  "exclude": ["**/*+(index|.test|.e2e).ts"],
+  "logLevel": "Verbose"
+}
