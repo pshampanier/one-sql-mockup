@@ -12,7 +12,7 @@ type FetchOptions = {
 };
 
 export class Agent {
-  static agent: Agent;
+  static agent?: Agent;
 
   readonly url!: string;
 
@@ -71,6 +71,9 @@ export class Agent {
 }
 
 export function agent(): Agent {
+  if (!Agent.agent) {
+    throw new Error("Agent not connected");
+  }
   return Agent.agent;
 }
 
