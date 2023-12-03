@@ -1,7 +1,7 @@
 import { serializable } from "@/utils/serializable";
-import { Connection } from "./connection";
-import { Variable } from "./variable";
-import { WorkspaceNode } from "./node";
+import { Connection } from "@/resources/workspace/connection";
+import { Variable } from "@/resources/workspace/variable";
+import { WorkspaceNode } from "@/resources/workspace/node";
 
 type EnvironmentProps = {
   connections?: Connection[];

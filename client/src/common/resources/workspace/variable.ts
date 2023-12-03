@@ -1,17 +1,8 @@
-import { UnionValues } from "@/utils/types";
-import { serializable } from "@/utils/serializable";
+import { formatRegExp, serializable } from "@/utils/serializable";
 import { deserializeString, deserializeInteger } from "@/utils/serializers";
 
-type VariableType = "text" | "boolean" | "date" | "timestamp" | "float" | "integer" | "secret";
-const VARIABLE_TYPES: UnionValues<VariableType>[] = [
-  "text",
-  "boolean",
-  "date",
-  "timestamp",
-  "float",
-  "integer",
-  "secret",
-];
+export const VARIABLE_TYPES = ["text", "boolean", "date", "timestamp", "float", "integer", "secret"] as const;
+export type VariableType = (typeof VARIABLE_TYPES)[number];
 
 type VariableValueType = boolean | bigint | number | string | Date | undefined;
 
@@ -23,7 +14,7 @@ export class Variable {
   @serializable("string", { format: "identifier", required: true })
   readonly name!: string;
 
-  @serializable("string", { format: new RegExp(`^${VARIABLE_TYPES.join("|")}$`), required: true })
+  @serializable("string", { format: formatRegExp(VARIABLE_TYPES), required: true })
   readonly type!: VariableType;
 
   @serializable("any", { name: "value", dependencies: "type" })

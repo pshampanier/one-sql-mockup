@@ -311,3 +311,13 @@ export function serializable<T extends object>(type: SerializableType, options?:
     Reflect.defineMetadata(METADATA_SERIALISER, serializer, target, key);
   };
 }
+
+/**
+ * An utility function to create a regular expression that matches any of the values.
+ *
+ * @param values - An array of string values.
+ * @returns A regular expression that matches any of the values.
+ */
+export function formatRegExp(values: readonly string[]): RegExp {
+  return new RegExp(`^${values.join("|")}$`);
+}

@@ -1,5 +1,5 @@
 import { serializable } from "@/utils/serializable";
-import { WorkspaceNode } from "./node";
+import { WorkspaceNode } from "@/resources/workspace/node";
 
 type ConnectionProps = {
   system: string;

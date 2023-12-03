@@ -61,6 +61,7 @@ export class CollectionItem<T> {
   }
 }
 
+// TODO: This class should be replaced by ResourceRef.
 export class CollectionItemLink<T> extends CollectionItem<T> {
   readonly path: string[];
 

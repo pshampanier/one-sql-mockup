@@ -1,13 +1,18 @@
-import { serializable } from "@/utils/serializable";
+import { formatRegExp, serializable } from "@/utils/serializable";
 
-type Minimap = "show" | "hide" | "auto";
-type RenderWhitespace = "all" | "none" | "boundary" | "selection" | "trailing";
+const THEME = ["light", "dark"] as const;
+const MINIMAP = ["show", "hide", "auto"] as const;
+const RENDER_WHITESPACE = ["all", "none", "boundary", "selection", "trailing"] as const;
+
+type RenderWhitespace = (typeof RENDER_WHITESPACE)[number];
+type Minimap = (typeof MINIMAP)[number];
+type Theme = (typeof THEME)[number];
 
 class EditorSettings {
-  @serializable("string", { format: /show|hide|auto/, trim: true })
+  @serializable("string", { format: formatRegExp(MINIMAP), trim: true })
   minimap: Minimap = "hide";
 
-  @serializable("string", { format: /all|none|boundary|selection|trailing/, trim: true })
+  @serializable("string", { format: formatRegExp(RENDER_WHITESPACE), trim: true })
   renderWhitespace: RenderWhitespace = "none";
 
   getMonacoEditorSettings(): object {
@@ -20,10 +25,8 @@ class EditorSettings {
   }
 }
 
-type Theme = "light" | "dark";
-
 export class UserSettings {
-  @serializable("string", { format: /light|dark/, trim: true })
+  @serializable("string", { format: formatRegExp(THEME), trim: true })
   theme: Theme = "light";
 
   @serializable("boolean")

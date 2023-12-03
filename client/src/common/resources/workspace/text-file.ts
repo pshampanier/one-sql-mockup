@@ -1,4 +1,4 @@
-import { ResourceRef } from "../resource-ref";
+import { ResourceRef } from "@/resources/resource-ref";
 
 export class TextFile {
   content: string;

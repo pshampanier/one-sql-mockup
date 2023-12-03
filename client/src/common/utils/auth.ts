@@ -1,7 +1,5 @@
-import { UnionValues } from "./types";
-
-export type AuthenticationMethods = "user_password" | "key" | "token";
-export const AUTHENTICATION_METHODS: UnionValues<AuthenticationMethods>[] = ["user_password", "key", "token"];
+export const AUTHENTICATION_METHODS = ["user_password", "key", "token"] as const;
+export type AuthenticationMethods = (typeof AUTHENTICATION_METHODS)[number];
 
 export interface AuthToken {
   token: string;
