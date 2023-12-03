@@ -1,5 +1,5 @@
 import { test, expect, describe } from "vitest";
-import { deserialize, serializable, serialize } from "../../util/serializable";
+import { deserialize, serializable, serialize } from "@/util/serializable";
 
 describe("deserialization", () => {
   test("string", () => {

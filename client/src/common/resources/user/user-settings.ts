@@ -8,7 +8,7 @@ class EditorSettings {
   minimap: Minimap = "hide";
 
   @serializable("string", { format: /all|none|boundary|selection|trailing/, trim: true })
-  renderWhitespace: RenderWhitespace = "all";
+  renderWhitespace: RenderWhitespace = "none";
 
   getMonacoEditorSettings(): object {
     return {

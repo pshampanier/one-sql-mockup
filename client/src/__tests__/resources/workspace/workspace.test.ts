@@ -1,5 +1,5 @@
-import { Workspace } from "../../../resources/workspace/workspace";
-import { deserialize } from "../../../util/serializable";
+import { Workspace } from "@/resources/workspace/workspace";
+import { deserialize } from "@/util/serializable";
 import { describe, test } from "vitest";
 
 describe("valid workspace", () => {

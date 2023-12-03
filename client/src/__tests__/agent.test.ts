@@ -1,4 +1,4 @@
-import { Agent } from "../resources/agent";
+import { Agent } from "@/resources/agent";
 import { describe, test, expect, vi } from "vitest";
 
 describe("logon", () => {

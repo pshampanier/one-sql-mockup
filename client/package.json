@@ -1,7 +1,7 @@
 {
-  "name": "sql-mockup",
+  "name": "one-sql",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,8 +10,7 @@
     "preview": "vite preview",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "doc": "typedoc --logLevel Verbose --exclude '**/*+(index|.test).ts'",
-    "backup": "tar --exclude='node_modules/' --exclude='coverage/' --exclude='dist/' -zcvf ../sql-mockup.`date -I`.tgz . && cp ../sql-mockup.`date -I`.tgz ~/Documents/Backup"
+    "doc": "typedoc --logLevel Verbose --exclude '**/*+(index|.test).ts'"
   },
   "dependencies": {
     "github-markdown-css": "^5.4.0",
@@ -41,6 +40,7 @@
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
     "vite-plugin-svgr": "^4.1.0",
+    "vite-tsconfig-paths": "^4.2.1",
     "vitest": "^0.34.6"
   }
 }

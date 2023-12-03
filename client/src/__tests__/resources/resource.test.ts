@@ -1,6 +1,6 @@
-import { Resource } from "../../resources/resource";
+import { Resource } from "@/resources/resource";
 import { test, expect } from "vitest";
-import { serializable } from "../../util/serializable";
+import { serializable } from "@/util/serializable";
 
 test("deserialize (valid)", () => {
   class Test {

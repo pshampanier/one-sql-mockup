@@ -1,6 +1,6 @@
 {
   "entryPoints": ["./src/util/*.ts"],
-  "name": "SQL Editor",
+  "name": "One SQL",
   "entryPointStrategy": "expand",
   "includeVersion": false,
   "exclude": ["**/*+(index|.test|.e2e).ts"],
