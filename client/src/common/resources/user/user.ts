@@ -57,7 +57,7 @@ export class User {
   }
 
   async loadCollectionItem<T>(id: string): Promise<T> {
-    const found = CollectionItemLink.find<UserCollectionItemType>(this.collections, id);
+    const found = CollectionItem.find<UserCollectionItemType>(this.collections, id);
     if (!found) {
       throw new Error("Collection item not found");
     }
