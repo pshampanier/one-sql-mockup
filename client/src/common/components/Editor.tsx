@@ -1,4 +1,4 @@
-import { useWorkspaceStore } from "../stores/WorkspaceStore";
+import { useWorkspaceStore } from "@/stores/WorkspaceStore";
 import Page from "./Page";
 
 export default function Editor() {

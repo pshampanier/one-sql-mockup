@@ -1,8 +1,8 @@
 import { Variable } from "./variable";
 import { Environment } from "./environment";
 import { CollectionItem } from "../collection-item";
-import { serializable } from "../../util/serializable";
-import { loadCollectionItem } from "../../api/v1/workspace";
+import { serializable } from "@/utils/serializable";
+import { loadCollectionItem } from "@/api/v1/workspace";
 import { ResourceRef } from "../resource-ref";
 import { Resource } from "../resource";
 

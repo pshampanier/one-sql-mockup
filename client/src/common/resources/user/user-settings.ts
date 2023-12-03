@@ -1,4 +1,4 @@
-import { serializable } from "../../util/serializable";
+import { serializable } from "@/utils/serializable";
 
 type Minimap = "show" | "hide" | "auto";
 type RenderWhitespace = "all" | "none" | "boundary" | "selection" | "trailing";

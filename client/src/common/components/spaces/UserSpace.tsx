@@ -1,5 +1,5 @@
-import { useUserStore } from "../../stores/UserStore";
-import { UserCollectionItem } from "../../resources/user/user";
+import { useUserStore } from "@/stores/UserStore";
+import { UserCollectionItem } from "@/resources/user/user";
 
 import Sidebar from "../sidebar/Sidebar";
 import SidebarSection from "../sidebar/SidebarSection";

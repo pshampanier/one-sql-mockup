@@ -1,13 +1,13 @@
 import "./App.css";
-import "./components/editors/index.tsx";
+import "@/components/editors/index.tsx";
 
 import { useEffect, useState } from "react";
-import { User } from "./resources/user/user";
-import { Agent } from "./resources/agent.ts";
-import { useUserStore } from "./stores/UserStore";
+import { User } from "@/resources/user/user";
+import { Agent } from "@/resources/agent.ts";
+import { useUserStore } from "@/stores/UserStore";
 
-import UserSpace from "./components/spaces/UserSpace";
-import WorkspaceSpace from "./components/spaces/WorkspaceSpace";
+import UserSpace from "@/components/spaces/UserSpace";
+import WorkspaceSpace from "@/components/spaces/WorkspaceSpace";
 
 function App() {
   const agentUrl = useState(window.location.href.split("#" /* remove everything after # */)[0])[0];

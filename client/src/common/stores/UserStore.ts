@@ -1,4 +1,4 @@
-import { User, UserApplicationSpace, UserCollectionItem, UserCollectionLink } from "../resources/user/user";
+import { User, UserApplicationSpace, UserCollectionItem, UserCollectionLink } from "@/resources/user/user";
 import { create } from "zustand";
 
 type UserStoreApplicationSpace = "connection" | "logon" | UserApplicationSpace;

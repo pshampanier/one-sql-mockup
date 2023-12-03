@@ -1,4 +1,4 @@
-import { serializable } from "../../util/serializable";
+import { serializable } from "@/utils/serializable";
 import { WorkspaceNode } from "./node";
 
 type ConnectionProps = {

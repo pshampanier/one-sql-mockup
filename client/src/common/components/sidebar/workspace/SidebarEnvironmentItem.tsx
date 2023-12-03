@@ -1,8 +1,8 @@
-import { Environment } from "../../../resources/workspace/environment";
+import { Environment } from "@/resources/workspace/environment";
 
 import SidebarItem from "../SidebarItem";
 
-import ServerIcon from "../../../assets/server.svg?react";
+import ServerIcon from "@/assets/server.svg?react";
 
 type SidebarEnvironmentItemProps = {
   env: Readonly<Environment>;

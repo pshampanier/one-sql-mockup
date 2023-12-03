@@ -1,4 +1,4 @@
-import { serializable } from "../../util/serializable";
+import { serializable } from "@/utils/serializable";
 import { Connection } from "./connection";
 import { Variable } from "./variable";
 import { WorkspaceNode } from "./node";

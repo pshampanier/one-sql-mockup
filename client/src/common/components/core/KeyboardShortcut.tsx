@@ -1,4 +1,4 @@
-import { isMacOS } from "../../util/plateform";
+import { isMacOS } from "@/utils/plateform";
 
 type Props = {
   /**

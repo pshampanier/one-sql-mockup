@@ -2,9 +2,9 @@ import { ReactNode, useState } from "react";
 
 import Tooltip from "../core/Tooltip";
 
-import ChevronIcon from "../../assets/chevron-right.svg?react";
-import LockClosedIcon from "../../assets/lock-closed.svg?react";
-import ErrorIcon from "../../assets/exclamation-triangle.svg?react";
+import ChevronIcon from "@/assets/chevron-right.svg?react";
+import LockClosedIcon from "@/assets/lock-closed.svg?react";
+import ErrorIcon from "@/assets/exclamation-triangle.svg?react";
 import { Spinner } from "../core/Spinner";
 
 type Props = {

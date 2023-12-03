@@ -1,8 +1,8 @@
-import { agent } from "../../resources/agent";
-import { CollectionItem } from "../../resources/collection-item";
-import { ResourceRef } from "../../resources/resource-ref";
-import { User, UserCollectionItem, UserCollectionItemType } from "../../resources/user/user";
-import { Workspace } from "../../resources/workspace/workspace";
+import { agent } from "@/resources/agent";
+import { CollectionItem } from "@/resources/collection-item";
+import { ResourceRef } from "@/resources/resource-ref";
+import { User, UserCollectionItem, UserCollectionItemType } from "@/resources/user/user";
+import { Workspace } from "@/resources/workspace/workspace";
 
 export async function listCollectionFolder(user: User, ref: ResourceRef): Promise<UserCollectionItem[]> {
   return (

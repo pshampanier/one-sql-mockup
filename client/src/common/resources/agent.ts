@@ -1,7 +1,7 @@
 import { Resource } from "./resource";
 import { User } from "./user/user";
-import { serializable } from "../util/serializable";
-import { AuthenticationMethods, AUTHENTICATION_METHODS, AuthRequest, AuthUserPassword } from "../util/auth";
+import { serializable } from "@/utils/serializable";
+import { AuthenticationMethods, AUTHENTICATION_METHODS, AuthRequest, AuthUserPassword } from "@/utils/auth";
 
 const API_PATH = "/api/v1";
 

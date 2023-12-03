@@ -1,10 +1,10 @@
-import { Workspace, WorkspaceCollectionItem } from "../../../resources/workspace/workspace";
-import { Editor, editors } from "../../../resources/editors";
+import { Workspace, WorkspaceCollectionItem } from "@/resources/workspace/workspace";
+import { Editor, editors } from "@/resources/editors";
 
-import { useWorkspaceStore } from "../../../stores/WorkspaceStore";
+import { useWorkspaceStore } from "@/stores/WorkspaceStore";
 
 import SidebarItem from "../SidebarItem";
-import FolderIcon from "../../../assets/folder.svg?react";
+import FolderIcon from "@/assets/folder.svg?react";
 
 type SidebarWorkspaceCollectionItem = {
   item: Readonly<WorkspaceCollectionItem>;

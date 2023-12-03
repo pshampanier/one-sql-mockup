@@ -1,7 +1,7 @@
-import { useWorkspaceStore } from "../../stores/WorkspaceStore";
-import { Environment } from "../../resources/workspace/environment";
-import { CollectionItem } from "../../resources/collection-item";
-import { WorkspaceCollectionItemType } from "../../resources/workspace/workspace";
+import { useWorkspaceStore } from "@/stores/WorkspaceStore";
+import { Environment } from "@/resources/workspace/environment";
+import { CollectionItem } from "@/resources/collection-item";
+import { WorkspaceCollectionItemType } from "@/resources/workspace/workspace";
 
 import Sidebar from "../sidebar/Sidebar";
 import SidebarSection from "../sidebar/SidebarSection";

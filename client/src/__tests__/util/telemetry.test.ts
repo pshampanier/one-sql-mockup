@@ -1,5 +1,5 @@
 import { test, expect } from "vitest";
-import { assert } from "@/util/telemetry";
+import { assert } from "@/utils/telemetry";
 
 test("assert", () => {
   expect(() => assert(true)).not.toThrow();

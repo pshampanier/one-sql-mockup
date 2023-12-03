@@ -1,12 +1,12 @@
-import { useUserStore } from "../../../stores/UserStore";
-import { useWorkspaceStore } from "../../../stores/WorkspaceStore";
-import { Workspace } from "../../../resources/workspace/workspace";
-import { User, UserCollectionItem } from "../../../resources/user/user";
+import { useUserStore } from "@/stores/UserStore";
+import { useWorkspaceStore } from "@/stores/WorkspaceStore";
+import { Workspace } from "@/resources/workspace/workspace";
+import { User, UserCollectionItem } from "@/resources/user/user";
 
 import SidebarItem from "../SidebarItem";
 
-import FolderIcon from "../../../assets/folder.svg?react";
-import WorkspaceIcon from "../../../assets/workspace.svg?react";
+import FolderIcon from "@/assets/folder.svg?react";
+import WorkspaceIcon from "@/assets/workspace.svg?react";
 
 type SidebarUserFolderProps = {
   item: UserCollectionItem;

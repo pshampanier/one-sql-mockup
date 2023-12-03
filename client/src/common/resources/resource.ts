@@ -1,5 +1,5 @@
-import { ObjectFactory } from "../util/types";
-import { deserialize } from "../util/serializable";
+import { ObjectFactory } from "@/utils/types";
+import { deserialize } from "@/utils/serializable";
 import { ResourceRef } from "./resource-ref";
 
 export class Resource<T extends object> {

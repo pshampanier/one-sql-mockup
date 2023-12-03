@@ -1,12 +1,12 @@
 import "github-markdown-css/github-markdown.css";
 import { editor as monacoEditor } from "monaco-editor";
 
-import { User } from "../../resources/user/user";
-import { Workspace } from "../../resources/workspace/workspace";
-import { editors } from "../../resources/editors";
+import { User } from "@/resources/user/user";
+import { Workspace } from "@/resources/workspace/workspace";
+import { editors } from "@/resources/editors";
 
 import React, { useEffect, useState, useRef } from "react";
-import { WorkspacePage } from "../../stores/WorkspaceStore";
+import { WorkspacePage } from "@/stores/WorkspaceStore";
 
 import MonacoEditor from "react-monaco-editor";
 import Markdown from "react-markdown";
@@ -15,9 +15,9 @@ import remarkGfm from "remark-gfm";
 import { IconButton } from "../core/IconButton";
 import { PageLoader } from "../PageLoader";
 
-import MarkdownIcon from "../../assets/markdown-file.svg?react";
-import EditCommandIcon from "../../assets/edit-command.svg?react";
-import PreviewCommandIcon from "../../assets/preview-command.svg?react";
+import MarkdownIcon from "@/assets/markdown-file.svg?react";
+import EditCommandIcon from "@/assets/edit-command.svg?react";
+import PreviewCommandIcon from "@/assets/preview-command.svg?react";
 
 const MarkdownEditor: React.FunctionComponent<{ page: WorkspacePage }> = ({ page }) => {
   console.log("Rendering MarkdownEditor");

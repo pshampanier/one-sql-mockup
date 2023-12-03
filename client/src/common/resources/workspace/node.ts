@@ -1,4 +1,4 @@
-import { serializable } from "../../util/serializable";
+import { serializable } from "@/utils/serializable";
 
 export abstract class WorkspaceNode {
   @serializable("string", { format: "uuid" })

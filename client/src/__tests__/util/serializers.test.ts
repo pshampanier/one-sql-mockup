@@ -1,4 +1,4 @@
-import * as s from "@/util/serializers";
+import * as s from "@/utils/serializers";
 import { describe, test, expect } from "vitest";
 
 describe("deserializeInteger", () => {

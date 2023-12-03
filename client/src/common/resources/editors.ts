@@ -1,4 +1,4 @@
-import { WorkspacePage } from "../stores/WorkspaceStore";
+import { WorkspacePage } from "@/stores/WorkspaceStore";
 
 export type Editor = {
   /**

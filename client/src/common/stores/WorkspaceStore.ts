@@ -1,6 +1,6 @@
-import { Editor } from "../resources/editors";
-import { Environment } from "../resources/workspace/environment";
-import { Workspace, WorkspaceCollectionItem } from "../resources/workspace/workspace";
+import { Editor } from "@/resources/editors";
+import { Environment } from "@/resources/workspace/environment";
+import { Workspace, WorkspaceCollectionItem } from "@/resources/workspace/workspace";
 import { create } from "zustand";
 
 export type WorkspacePage = {

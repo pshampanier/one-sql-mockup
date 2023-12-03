@@ -31,7 +31,7 @@
       "@/assets/*": ["assets/*"],
       "@/resources/*": ["resources/*"],
       "@/stores/*": ["stores/*"],
-      "@/util/*": ["util/*"]
+      "@/utils/*": ["utils/*"]
     }
   },
   "include": ["src"],

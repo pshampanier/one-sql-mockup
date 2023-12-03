@@ -1,6 +1,6 @@
-import { UnionValues } from "../../util/types";
-import { serializable } from "../../util/serializable";
-import { deserializeString, deserializeInteger } from "../../util/serializers";
+import { UnionValues } from "@/utils/types";
+import { serializable } from "@/utils/serializable";
+import { deserializeString, deserializeInteger } from "@/utils/serializers";
 
 type VariableType = "text" | "boolean" | "date" | "timestamp" | "float" | "integer" | "secret";
 const VARIABLE_TYPES: UnionValues<VariableType>[] = [

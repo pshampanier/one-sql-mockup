@@ -1,10 +1,10 @@
-import { listCollectionFolder, getWorkspace } from "../../api/v1/user";
-import { serializable } from "../../util/serializable";
+import { listCollectionFolder, getWorkspace } from "@/api/v1/user";
+import { serializable } from "@/utils/serializable";
 import { CollectionItem, CollectionItemLink } from "../collection-item";
 import { ResourceRef } from "../resource-ref";
 import { UserSettings } from "./user-settings";
 import { agent } from "../agent";
-import { AuthRequest } from "../../util/auth";
+import { AuthRequest } from "@/utils/auth";
 
 export type UserApplicationSpace = "user" | "workspace";
 

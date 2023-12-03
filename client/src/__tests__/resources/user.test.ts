@@ -1,6 +1,6 @@
 import { User } from "@/resources/user/user";
 import { test, expect } from "vitest";
-import { deserialize } from "@/util/serializable";
+import { deserialize } from "@/utils/serializable";
 
 test("valid user", () => {
   expect(

@@ -1,6 +1,6 @@
 import { Variable } from "@/resources/workspace/variable";
 import { describe, test, expect } from "vitest";
-import { deserialize } from "@/util/serializable";
+import { deserialize } from "@/utils/serializable";
 
 describe("Variables", () => {
   test("constructors", () => {

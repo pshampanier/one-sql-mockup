@@ -1,14 +1,14 @@
 import { editor as monacoEditor } from "monaco-editor";
 import React, { useEffect, useRef, useState } from "react";
-import { editors } from "../../resources/editors";
+import { editors } from "@/resources/editors";
 
-import { WorkspacePage } from "../../stores/WorkspaceStore";
+import { WorkspacePage } from "@/stores/WorkspaceStore";
 
-import SqlIdon from "../../assets/sql-file.svg?react";
+import SqlIdon from "@/assets/sql-file.svg?react";
 import MonacoEditor from "react-monaco-editor";
 import { PageLoader } from "../PageLoader";
-import { User } from "../../resources/user/user";
-import { Workspace } from "../../resources/workspace/workspace";
+import { User } from "@/resources/user/user";
+import { Workspace } from "@/resources/workspace/workspace";
 
 const SqlEditor: React.FunctionComponent<{ page: WorkspacePage }> = ({ page }) => {
   console.log("Rendering SqlEditor");
