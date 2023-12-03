@@ -18,7 +18,7 @@ export class Resource<T extends object> {
 
   get ref(): ResourceRef {
     if (!this._ref) {
-      throw new Error("No ref available.");
+      throw new Error("No ref available");
     }
     return this._ref;
   }
@@ -27,7 +27,7 @@ export class Resource<T extends object> {
     if (typeof this.value !== "string" || !this.value) {
       throw new Error("No data available.");
     } else if (this.contentType !== "application/json") {
-      throw new Error(`Expecting 'content-type: application/json', found 'content-type: ${this.contentType}'.`);
+      throw new Error(`Expecting 'content-type: application/json', found 'content-type: ${this.contentType}'`);
     }
 
     const data = JSON.parse(this.value);
@@ -42,7 +42,7 @@ export class Resource<T extends object> {
     if (typeof this.value !== "string" || !this.value) {
       throw new Error("No data available.");
     } else if (!this.contentType.startsWith("text/")) {
-      throw new Error(`Expecting 'content-type: text/...', found 'content-type: ${this.contentType}'.`);
+      throw new Error(`Expecting 'content-type: text/...', found 'content-type: ${this.contentType}'`);
     }
 
     return this.value;
