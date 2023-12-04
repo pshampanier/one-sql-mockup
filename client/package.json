@@ -2,6 +2,7 @@
   "name": "one-sql",
   "private": true,
   "version": "0.0.1",
+  "author": "Philippe Shampanier <pshampanier@gmail.com> (https://one-sql.io/)",
   "type": "module",
   "scripts": {
     "dev": "vite",
