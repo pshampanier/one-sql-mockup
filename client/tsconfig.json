@@ -24,7 +24,7 @@
     "noFallthroughCasesInSwitch": true,
 
     /* Paths */
-    "baseUrl": "./src/common/",
+    "baseUrl": "./common/src",
     "paths": {
       "@/api/*": ["api/*"],
       "@/components/*": ["components/*"],
@@ -34,6 +34,6 @@
       "@/utils/*": ["utils/*"]
     }
   },
-  "include": ["src"],
+  "include": ["common/src/**/*", "webapp/src/**/*"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

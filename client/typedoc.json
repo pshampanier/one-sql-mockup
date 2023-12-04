@@ -1,8 +1,7 @@
 {
-  "entryPoints": ["./src/util/*.ts"],
+  "entryPoints": ["./common/src/utils/*.ts"],
   "name": "One SQL",
   "entryPointStrategy": "expand",
   "includeVersion": false,
-  "exclude": ["**/*+(index|.test|.e2e).ts"],
-  "logLevel": "Verbose"
+  "exclude": ["**/*+(index|.test|.e2e).ts"]
 }
