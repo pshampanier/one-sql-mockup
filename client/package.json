@@ -10,8 +10,10 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "vitest",
-    "coverage": "vitest run --coverage",
-    "doc": "typedoc --tsconfig tsconfig.build.json --logLevel Verbose"
+    "coverage": "vitest run --coverage && mv coverage ./build/coverage",
+    "doc": "typedoc --tsconfig tsconfig.build.json --logLevel Verbose",
+    "all": "npm run lint && npx vitest  --run && npm run build && npm run doc && npm run coverage",
+    "clean": "rm -rf build"
   },
   "dependencies": {
     "github-markdown-css": "^5.4.0",

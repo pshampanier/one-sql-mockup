@@ -45,6 +45,7 @@ export class SerialisationError extends Error {
 }
 
 export function safeDeserialization<T>(
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   callbackfn: (...args: any[]) => NonNullable<T>,
   key?: string | number,
   ...args: unknown[]

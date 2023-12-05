@@ -3,5 +3,6 @@
   "name": "One SQL",
   "entryPointStrategy": "expand",
   "includeVersion": false,
-  "exclude": ["**/*+(index|.test|.e2e).ts"]
+  "exclude": ["**/*+(index|.test|.e2e).ts"],
+  "out": "./build/typescript-doc"
 }

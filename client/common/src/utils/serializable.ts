@@ -11,6 +11,7 @@ import {
   safeDeserialization,
   SerialisationError,
 } from "./serializers";
+import { raise } from "./telemetry";
 
 const METADATA_SERIALISER = Symbol("serializer");
 const METADATA_DESERIALIZER = Symbol("deserializer");
@@ -178,8 +179,7 @@ function makeSerializer<T extends object>(type: SerializableType, options?: Seri
       const items = options?.items;
       /* c8 ignore start */
       if (!items) {
-        debugger;
-        throw new SyntaxError(`The 'items' option is required for the decoration @serialise("array")`);
+        raise(`The 'items' option is required for the decoration @serialise("array")`);
       }
       /* c8 ignore end */
       const itemSerializer = makeSerializer(items.type, items.options);
@@ -239,8 +239,7 @@ function makeDeserializer<T extends object>(type: SerializableType, options?: Se
         const objectFactory: ObjectFactory<T> | undefined = options?.factory;
         /* c8 ignore start */
         if (!objectFactory) {
-          debugger;
-          throw new SyntaxError(`The 'factory' option is required for the decoration @serialise("object")`);
+          raise(`The 'factory' option is required for the decoration @serialise("object")`);
         }
         /* c8 ignore end */
         return [key, deserialize<T>(value, objectFactory, safeKey(key))];
@@ -250,7 +249,7 @@ function makeDeserializer<T extends object>(type: SerializableType, options?: Se
       const items = options?.items;
       /* c8 ignore start */
       if (!items) {
-        debugger;
+        raise(`The 'items' option is required for the decoration @serialise("array")`);
         throw new SyntaxError(`The 'items' option is required for the decoration @serialise("array")`);
       }
       /* c8 ignore end */
@@ -277,7 +276,7 @@ function makeDeserializer<T extends object>(type: SerializableType, options?: Se
     default: {
       // TODO:
       return (value: unknown, key: string | number) => {
-        debugger;
+        raise("Not implemented yet");
         return [key, value];
       };
     }
